@@ -11,7 +11,22 @@
 		2F3526C029A316D600C05C20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3526BF29A316D600C05C20 /* ContentView.swift */; };
 		2F3526C229A316D700C05C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3526C129A316D700C05C20 /* Assets.xcassets */; };
 		2F3526C529A316D700C05C20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F3526C429A316D700C05C20 /* Preview Assets.xcassets */; };
+		2F3526CD29A3229A00C05C20 /* LuzServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3526CC29A3229A00C05C20 /* LuzServer.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		2F3526CE29A3331400C05C20 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		2F3526BA29A316D600C05C20 /* luz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = luz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +35,7 @@
 		2F3526C129A316D700C05C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F3526C429A316D700C05C20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2F3526C629A316D700C05C20 /* luz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = luz.entitlements; sourceTree = "<group>"; };
+		2F3526CC29A3229A00C05C20 /* LuzServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuzServer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 				2F3526C129A316D700C05C20 /* Assets.xcassets */,
 				2F3526C629A316D700C05C20 /* luz.entitlements */,
 				2F3526C329A316D700C05C20 /* Preview Content */,
+				2F3526CC29A3229A00C05C20 /* LuzServer.swift */,
 			);
 			path = luz;
 			sourceTree = "<group>";
@@ -81,6 +98,7 @@
 				2F3526B829A316D600C05C20 /* Resources */,
 			);
 			buildRules = (
+				2F3526CE29A3331400C05C20 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -139,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3526CD29A3229A00C05C20 /* LuzServer.swift in Sources */,
 				2F3526C029A316D600C05C20 /* ContentView.swift in Sources */,
 				2F3526BE29A316D600C05C20 /* luzApp.swift in Sources */,
 			);

@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var lightsOn = true
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Luz - Manage Lights")
+            Toggle("Lights", isOn: $lightsOn)
+                .toggleStyle(.switch)
+                .onChange(of: lightsOn, perform: { value in
+                    LuzServer.shared.turnLights(lightsOn ? .on : .off)
+                })
         }
         .padding()
     }
